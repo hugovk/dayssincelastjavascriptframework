@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="favicon.ico" rel="icon" type="image/x-icon"/>
+  <title>
+    Days since last JavaScript framework
+  </title>
+  <link rel="stylesheet" href="https://simonwhitaker.github.io/github-fork-ribbon-css/gh-fork-ribbon.css">
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" href="https://simonwhitaker.github.io/github-fork-ribbon-css/gh-fork-ribbon.ie.css">
+  <![endif]-->
+  <script src='jquery-1.11.2.min.js'></script>
+  <script src="jquery.textfill.min.js"></script>
+  <script type="text/javascript">
+    <!--
+    var intro = 'Days since last JavaScript framework';
+
+    var counter = 0/0;
+    counter = counter.toString();
+
+    $(document).ready(function() {
+      $('#intro').html(intro);
+      $('#counter').html(counter);
+      $(".counter-container").css({"bottom": "0"});
+      $('#counter-container').textfill({ maxFontPixels: 0 });
+    });
+
+    $(window).resize(function() {
+      $('#counter-container').textfill( {maxFontPixels: 0} );
+    });
+    -->
+  </script>
+  <script>
+  <!-- GA -->
+  </script>
+  <style type="text/css">
+    .intro, .counter {
+      font-family: sans-serif;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    body {
+      background-color: #F7DF1E;
+      color: black;
+    }
+
+    .intro {
+      padding-top: 5px;
+    }
+
+    .outline {
+      text-shadow:
+        -2px -2px 0 black,
+        2px -2px 0 black,
+        -2px 2px 0 black,
+        2px 2px 0 black;
+    }
+
+    #counter-container {
+      padding: 5px;
+      position: absolute;
+      top: 48px;
+      bottom: 60px;
+      left: 0;
+      right: 0;
+      text-align: center;
+    }
+
+    /* Sticky footer */
+    * {
+      margin: 0;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    .page-wrap {
+      min-height: 100%;
+      /* equal to footer height */
+      margin-bottom: -60px;
+    }
+
+    .page-wrap:after {
+      content: "";
+      display: block;
+    }
+
+    .site-footer, .page-wrap:after {
+      /* .push must be the same height as footer */
+      height: 60px;
+    }
+
+    .site-footer {
+    }
+
+    /* Ribbon */
+    .github-fork-ribbon {
+      background-color: black;
+    }
+    .github-fork-ribbon a,
+    .github-fork-ribbon a:hover {
+      color: #F7DF1E;
+    }
+  </style>
+</head>
+<body>
+  <div class="github-fork-ribbon-wrapper right">
+    <div class="github-fork-ribbon">
+      <a href="https://github.com/hugovk/dayssincelastjavascriptframework">Fork me on GitHub</a>
+    </div>
+  </div>
+
+  <H2>
+    <div id="intro" class="intro"></div>
+  </H2>
+  <H1>
+    <div id="counter-container"><span id="counter" class="counter outline"></span></div>
+  </H1>
+</body>
+</html>
