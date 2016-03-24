@@ -1,0 +1,60 @@
+.intro, .counter {
+  font-family: sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+body {
+  background-color: #F7DF1E;
+  color: black;
+}
+
+.intro {
+  padding-top: 5px;
+}
+
+#counter-container {
+  padding: 5px;
+  position: absolute;
+  top: 48px;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+/* Sticky footer */
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.page-wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -60px;
+}
+
+.page-wrap:after {
+  content: "";
+  display: block;
+}
+
+.site-footer, .page-wrap:after {
+  /* .push must be the same height as footer */
+  height: 60px;
+}
+
+.site-footer {
+}
+
+/* Ribbon */
+.github-fork-ribbon:before {
+  background-color: black;
+}
+.github-fork-ribbon:after {
+  color: #F7DF1E;
+}
