@@ -5,9 +5,9 @@
   <title>
     Days since last JavaScript framework
   </title>
-  <link rel="stylesheet" href="https://simonwhitaker.github.io/github-fork-ribbon-css/gh-fork-ribbon.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css" />
   <!--[if lt IE 9]>
-  <link rel="stylesheet" href="https://simonwhitaker.github.io/github-fork-ribbon-css/gh-fork-ribbon.ie.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.ie.min.css" />
   <![endif]-->
   <script src='jquery-1.11.2.min.js'></script>
   <script src="jquery.textfill.min.js"></script>
@@ -94,11 +94,10 @@
     }
 
     /* Ribbon */
-    .github-fork-ribbon {
+    .github-fork-ribbon:before {
       background-color: black;
     }
-    .github-fork-ribbon a,
-    .github-fork-ribbon a:hover {
+    .github-fork-ribbon:after {
       color: #F7DF1E;
     }
   </style>
@@ -108,11 +107,7 @@
   <meta name="twitter:description" content="When was the last JavaScript framework?" />
 </head>
 <body>
-  <div class="github-fork-ribbon-wrapper right">
-    <div class="github-fork-ribbon">
-      <a href="https://github.com/hugovk/dayssincelastjavascriptframework">Fork me on GitHub</a>
-    </div>
-  </div>
+  <a class="github-fork-ribbon" href="https://github.com/hugovk/dayssincelastjavascriptframework" title="Fork me on GitHub">Fork me on GitHub</a>
 
   <H2>
     <div id="intro" class="intro"></div>
